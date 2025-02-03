@@ -19,7 +19,7 @@
     </table>
     <script>
         async function fetchStudentData() {
-            const response = await fetch('https://<your-function-app-url>/api/GetStudentCount');
+            const response = await fetch('https://student-data-1.azurewebsites.net/api/GetStudentCount?/api/GetStudentCount');
             const data = await response.json();
             const tableBody = document.querySelector('#studentTable tbody');
             tableBody.innerHTML = data.map(row =>
